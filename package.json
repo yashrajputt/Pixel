@@ -2,7 +2,7 @@
   "name": "moviezspot",
   "version": "1.0.0",
   "description": "This App shows Movies details",
-   "main":"App.js",
+  
   "type":"module",
   "scripts": {
     "test": "jest",
@@ -24,8 +24,6 @@
     "postcss": "^8.4.38",
     "process": "^0.11.10",
     "tailwindcss": "^3.4.3"
-  },
-  "targets": {
-    "main": {}
   }
+ 
 }
