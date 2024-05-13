@@ -7,21 +7,14 @@ import Popular from './Popular';
 import Footer from './Footer';
 import Toprated from './Toprated';
 import People from './People';
-import UserContext from './utils/UserContext';
-
-
 
 
 const App = () => {
   return (
     <div>
-      
-      <UserContext.Provider>
       <Header/>
       <Outlet/>
       <Footer/>
-      </UserContext.Provider>
- 
     </div>
   )
 }
@@ -45,7 +38,7 @@ const Approute= createBrowserRouter([{
   },{
     path:"/people",
     element:<People/>
-  },]
+  }]
   
 }])
 

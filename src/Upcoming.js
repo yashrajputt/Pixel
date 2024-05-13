@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MovieCard from './MovieCard';
 import { UPCOMING_API } from './utils/apis';
 
+
 const Upcoming = () => {
     const [UpComingMovies,setUpComingMovies]=useState([]);
 
@@ -27,6 +28,7 @@ const Upcoming = () => {
         })}
       </div>
       </div>
+      
     </div>
   )
 }
