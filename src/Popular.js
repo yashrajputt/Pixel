@@ -5,7 +5,7 @@ import MovieCard from "./MovieCard.js";
 const Popular =()=>{
     
     const[popular,setPopular]=useState([]);
-   const[tempPopular,setTempPopular]=useState([]);
+    const[tempPopular,setTempPopular]=useState([]);
     
 
     useEffect(()=>{
@@ -21,7 +21,7 @@ const Popular =()=>{
 
     }
 
-    return <div className="flex">
+    return <div className="lg:flex">
            
       {/* ..........This is how you can change the parent state from children.......*/}
            
@@ -29,7 +29,7 @@ const Popular =()=>{
             setPopular(filterarray)
            }}/>
            
-           <div className="flex flex-wrap m-5 mt-10">
+           <div className="flex flex-wrap lg:m-5 mt-10 m-16">
               
               {popular.length==0? <p>No Movies Found!!</p>:
               popular.map((movie)=>{

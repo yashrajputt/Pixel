@@ -2,20 +2,20 @@ import React, { useEffect, useState } from 'react'
 import MovieCard from './MovieCard';
 import { TVSHOWS_API } from './utils/apis';
 
-const Tvshows = () => {
+const Tvshows = ({data2}) => {
   
-  const[tvShow,setTvShow]=useState([]);
+  // const[tvShow,setTvShow]=useState([]);
 
-  useEffect(()=>{
-   fetchTvShow();
-  },[]);
+  // useEffect(()=>{
+  //  fetchTvShow();
+  // },[]);
 
-  const fetchTvShow= async()=>{
-    const data=await fetch(TVSHOWS_API)
-    const json= await data.json();
+  // const fetchTvShow= async()=>{
+  //   const data=await fetch(TVSHOWS_API)
+  //   const json= await data.json();
 
-    setTvShow(json?.results);
-  }
+  //   setTvShow(json?.results);
+  // }
   
     return (
     <div className=' bg-slate-200 border'>
@@ -24,7 +24,7 @@ const Tvshows = () => {
            <h1 className='font-bold text-3xl'>TV Shows</h1>
         </div>
         <div className='flex overflow-x-auto'>
-            {tvShow.map((movie)=>{
+            {data2.map((movie)=>{
                 return <MovieCard key={movie.id} movieDetail={movie}/>
             })}
         </div>

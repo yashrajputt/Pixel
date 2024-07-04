@@ -16,7 +16,7 @@ const People = () => {
      setPeople(json?.results);
   }
   return (
-    <div className='flex flex-wrap '>
+    <div className='flex flex-wrap m-20 '>
       {people.map((People)=>{
         return <PeopleCard key={People.id} Peopledetail={People}/>
       })}

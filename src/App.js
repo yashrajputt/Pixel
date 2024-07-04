@@ -7,6 +7,7 @@ import Popular from './Popular';
 import Footer from './Footer';
 import Toprated from './Toprated';
 import People from './People';
+import SearchResult from './SearchResult';
 
 
 const App = () => {
@@ -38,7 +39,11 @@ const Approute= createBrowserRouter([{
   },{
     path:"/people",
     element:<People/>
-  }]
+  },
+{
+  path:"/searchresult",
+  element:<SearchResult/>
+}]
   
 }])
 

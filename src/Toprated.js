@@ -22,11 +22,11 @@ const Toprated = () => {
   }
   
     return (
-    <div className="flex">
+    <div className="lg:flex">
         <Genres moviearray={temptopRated} update={(filterarray)=>{
             setTopRated(filterarray)
         }}/>
-        <div className='flex flex-wrap m-5 mt-10'>
+        <div className='flex flex-wrap lg:m-5 m-16 mt-10'>
         {
             topRated.length==0?<p>No Movies Found!!</p>:
             

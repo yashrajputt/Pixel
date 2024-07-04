@@ -19,7 +19,7 @@ const Genres = (props) => {
   }
     return (
     
-        <div className="border border-stone-300 w-1/6 h-1/2 m-5 mt-10 rounded-xl bg-stone-100 shadow-xl shrink-0">
+        <div className="border border-stone-300 lg:w-1/6 lg:h-1/2 m-5 mt-10 rounded-xl bg-stone-100 shadow-xl shrink-0">
                  <h1 className="font-bold m-4 text-lg">Genres</h1>
                 
                
